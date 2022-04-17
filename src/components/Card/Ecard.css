@@ -1,0 +1,25 @@
+.Ecard{
+    max-width: 400px;
+    margin-top: 1vh;
+    margin-bottom:1vh;
+}
+.Sicon{
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em 0.6em;
+    background-color: #eaeef0;
+
+}
+.notifications{
+position: absolute;
+bottom: 0;
+right: 0;
+margin-bottom: 1vh;
+}
+
+.user-edit{
+    display: flex;
+    justify-content: space-around;
+
+}
