@@ -6,7 +6,7 @@ import "../search/SearchBar.css"
 import { SearchWrapper,SearchContainer,IconButton,SearchInput } from './SearchBarStyled';
 import FormModal from '../modal/Modal';
 
-function SearchBar() {
+function SearchBar({HandleChange}) {
     
 
   return (
@@ -17,7 +17,7 @@ function SearchBar() {
             <Icon icon="bytesize:search" color="#23aaeb" width="11" height="11" />
             </IconButton>
             Search
-            <SearchInput />
+            <SearchInput onChange={HandleChange}/>
             <FormModal />
         </SearchContainer>
         
