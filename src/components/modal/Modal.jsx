@@ -27,7 +27,7 @@ export default function FormModal() {
             <Modal.Title className="ModalTitle">NEW EMPLOYEE</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <ModalForm />
+            <ModalForm handleClose= {handleClose}/>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>

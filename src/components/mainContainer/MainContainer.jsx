@@ -1,12 +1,16 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Ecard from '../Card/Card';
 import SearchBar from '../search/SearchBar';
 import './MainContainer.css';
+import {UsersContext} from '../../contexts/UsersContext';
+
 
 function MainContainer() {
+  const {users} = useContext(UsersContext)
+  console.log(users)
   return (
-
+    
     <Container className='Main-Container'>
       <Row className='mb-5'>
         <Col>
@@ -14,12 +18,9 @@ function MainContainer() {
         </Col>
       </Row>
       <Row className=''>
-        <Ecard />
-        <Ecard />
-        <Ecard />
-        <Ecard />
-        <Ecard />
-        <Ecard />
+       {users.map( (user)=> 
+          <Ecard user={user}/>
+       )}
       </Row>
     </Container>
 

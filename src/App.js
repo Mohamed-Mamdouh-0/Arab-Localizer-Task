@@ -1,10 +1,18 @@
 
 import Home from './components/Home';
+import {DefaultContext} from './contexts/UsersContext';
+
 
 function App() {
+ 
   return (
     <div className="App">
-        <Home />
+      <DefaultContext>
+      <Home />
+      </DefaultContext>
+      
+
+       
     </div>
   );
 }
