@@ -38,10 +38,10 @@ function MainContainer() {
         </Col>
       </Row>
       <Row className='ms-3'>
-        {/* {usersList.map((user) =>
+        {usersList.map((user) =>
           <Ecard user={user} />
-        )} */}
-        <Cardtwo />
+        )}
+        {/* <Cardtwo /> */}
       </Row>
     </Container>
 
