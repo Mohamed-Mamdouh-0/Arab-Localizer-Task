@@ -16,7 +16,6 @@ function SearchBar({HandleChange}) {
             <IconButton>
             <Icon icon="bytesize:search" color="#23aaeb" width="11" height="11" />
             </IconButton>
-            Search
             <SearchInput onChange={HandleChange}/>
             <FormModal />
         </SearchContainer>

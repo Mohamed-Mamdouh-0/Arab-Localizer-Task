@@ -6,11 +6,11 @@ import {NotifIcon,UserImage,SignInButton} from "./UserStyledComponent"
 
 function User() {
   return (
-    <Container>
+    <Container fluid={true}>
         <Row>
             <Col>
             <Navbar>
-                <Container>
+                <Container fluid={true}>
                     <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
                     Thursday, 03 Oct 02:08:07 PM

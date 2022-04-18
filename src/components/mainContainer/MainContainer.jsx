@@ -2,8 +2,9 @@ import React, { useContext, useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Ecard from '../Card/Card';
 import SearchBar from '../search/SearchBar';
-import './MainContainer.css';
+import '../mainContainer/MainContainer.css';
 import { UsersContext } from '../../contexts/UsersContext';
+import Cardtwo from '../Card/Cardtwo';
 
 
 function MainContainer() {
@@ -30,16 +31,17 @@ function MainContainer() {
 
   return (
 
-    <Container className='Main-Container'>
+    <Container  fluid ={true} className='Main-Container'>
       <Row className='mb-5'>
         <Col>
           <SearchBar HandleChange={HandleChange} />
         </Col>
       </Row>
-      <Row className=''>
-        {usersList.map((user) =>
+      <Row className='ms-3'>
+        {/* {usersList.map((user) =>
           <Ecard user={user} />
-        )}
+        )} */}
+        <Cardtwo />
       </Row>
     </Container>
 

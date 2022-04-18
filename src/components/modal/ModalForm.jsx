@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Col, Row, Button, Form, } from 'react-bootstrap'
+import { Col, Row, Button, Form, Modal } from 'react-bootstrap'
 import "../modal/Modal.css"
 import { useState } from 'react';
 import { UsersContext } from "../../contexts/UsersContext"
@@ -84,7 +84,7 @@ export default function ModalForm({ handleClose }) {
                             <Form.Label>Department</Form.Label>
                             <Form.Select type="text" placeholder="Select" required onChange={onFormChange} name="department">
                                 <option> </option>
-                                <option>test</option>
+                                <option>Buisness Department</option>
                             </Form.Select>
                             <Form.Control.Feedback type="invalid">
                                 Please choose a Department.
@@ -112,9 +112,9 @@ export default function ModalForm({ handleClose }) {
                         </Form.Group>
                         <Form.Group className="mb-3" controlId='positionValidation'>
                             <Form.Label>Position</Form.Label>
-                            <Form.Select type="text" placeholder="Name" required onChange={onFormChange} name="position" defaultValue={null}>
+                            <Form.Select type="text" placeholder="Name" required onChange={onFormChange} name="role" defaultValue={null}>
                                 <option> </option>
-                                <option>test</option>
+                                <option>Hr Head</option>
                             </Form.Select>
                             <Form.Control.Feedback type="invalid">
                                 Please choose a position.
@@ -129,7 +129,18 @@ export default function ModalForm({ handleClose }) {
                         className='ms-3'
                     />
                 </Row>
-                <Button type="submit" >SUBMIT</Button>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button type="submit" variant="primary" >
+                        Save Changes
+                    </Button>
+                </Modal.Footer>
+
+
+
+
             </Form>
 
         </>

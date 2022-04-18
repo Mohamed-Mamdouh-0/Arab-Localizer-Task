@@ -27,7 +27,7 @@ function Sidebar() {
                         </NavIconsWrapper>
                         <NavIconsWrapper>
                             <span eventKey="link-4"><Icon icon="fa-solid:hands" color="white" width="36" height="25" /></span>
-                            <NavIconTitle>Inbound Requests</NavIconTitle>
+                            <NavIconTitle  className='ps-2'>Inbound Requests</NavIconTitle>
                         </NavIconsWrapper>
                     </SidebarNav>
                 </Col>
@@ -46,7 +46,14 @@ position: fixed;
 top:0;
 left:0;
 height: 100%;
-
+@media only screen and (max-width: 1224px) {
+    width:7vw;
+    
+  }
+  @media only screen and (max-width: 700px) {
+    width:8vw;
+    
+  }
 `;
 
 const NavIconsWrapper = styled.div`
@@ -55,14 +62,14 @@ flex-direction:column;
 align-items:center;
 margin-top: 30%;
 padding-top:15px;
+cursor:pointer;
 `;
 
 const NavIconTitle = styled.text`
 
 width: 52px;
 height: 14px;
-font-family: Roboto;
-font-size: 12px;
+font-size: 10px;
 font-weight: normal;
 font-stretch: normal;
 font-style: normal;

@@ -6,19 +6,19 @@ import styled from 'styled-components';
 
 function Ecard({ user }) {
     return (
-        <Col md={3}>
+        <Col xs={3}>
             <div>
-                <div class="card p-3 Ecard">
+                <div class="card ps-2 Ecard">
                     <Row>
-                        <Col lg={3} className="p-0">
-                            <UserImage src='https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png' />
+                        <Col xs={3} className=" p-0">
+                            <UserImage className='mx-4 mt-4' src='https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png' />
                             <div className='user-edit'>
-                                <Icon icon="ci:edit" color="#8997a4" width="20" height="22" />
-                                <Icon icon="ant-design:pause-circle-outlined" color="#8997a4" width="20" height="22" />
-                                <Icon icon="ic:baseline-delete-forever" color="#8997a4" width="28" height="21" />
+                                <Icon className='pe-2' icon="ci:edit" color="#8997a4" width="19" height="22" />
+                                <Icon className='pe-2' icon="ant-design:pause-circle-outlined" color="#8997a4" width="19" height="22" />
+                                <Icon className='pe-2' icon="ic:baseline-delete-forever" color="#8997a4" width="19" height="21" />
                             </div>
                         </Col>
-                        <Col>
+                        <Col className='p-0'>
                             <div class="card-body">
                                 <h5 class="card-title">{user.name}</h5>
                                 <h7>{user.role}</h7>

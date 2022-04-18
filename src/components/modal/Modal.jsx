@@ -29,12 +29,7 @@ export default function FormModal() {
           <Modal.Body>
             <ModalForm handleClose= {handleClose}/>
           </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Cancel
-            </Button>
-            <Button variant="primary">Save</Button>
-          </Modal.Footer>
+
         </Modal>
       </>
     );

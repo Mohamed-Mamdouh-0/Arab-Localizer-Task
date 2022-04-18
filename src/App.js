@@ -1,6 +1,7 @@
 
 import Home from './components/Home';
 import {DefaultContext} from './contexts/UsersContext';
+import "./App.css"
 
 
 function App() {
