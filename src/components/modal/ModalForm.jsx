@@ -3,6 +3,7 @@ import { Col, Row, Button, Form, Modal } from 'react-bootstrap'
 import "../modal/Modal.css"
 import { useState } from 'react';
 import { UsersContext } from "../../contexts/UsersContext"
+import nextId from "react-id-generator";
 
 
 
@@ -29,7 +30,7 @@ export default function ModalForm({ handleClose }) {
     const onFormChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-        setValues({ ...values, [name]: value });
+        setValues({ ...values, [name]: value,id:nextId() });
 
     };
     return (

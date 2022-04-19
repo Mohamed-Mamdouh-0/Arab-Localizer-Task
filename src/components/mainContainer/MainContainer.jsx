@@ -23,6 +23,15 @@ function MainContainer() {
     }
 
   }
+  const HandleDelete = (id) => {
+    
+      const filteredUsers = users.filter(u => u.id !== id)
+      setUsersList(
+        filteredUsers
+      )
+    console.log(filteredUsers)
+
+  }
 
   useEffect(() => {
     setUsersList(users)
@@ -39,7 +48,7 @@ function MainContainer() {
       </Row>
       <Row className='ms-3 cardRow'xs={1} md={2} lg={3}>
         {usersList.map((user) =>
-          <Ecard user={user} />
+          <Ecard user={user} HandleDelete={HandleDelete} />
         )}
         
       </Row>

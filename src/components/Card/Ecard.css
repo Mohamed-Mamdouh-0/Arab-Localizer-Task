@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .Ecard{
     height: 120px;
     margin-top: 1vh;
@@ -88,4 +90,27 @@ margin-bottom: 1vh;
     background-color: #23aaeb;
     font-weight: 500;
     color: #23aaeb;
+}
+.icon-link{
+  cursor:pointer;
+}
+.icon-link:hover{
+
+  width:22px;
+}
+.EName{
+  color: #5c6974 !important;
+  font-family: 'Lato', sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+.EDepart{
+  font-size: 10px;
+  color: #5c6974;
+  padding-bottom: 1%;
+}
+.ERole{
+  padding-top: 5px;
+  padding-bottom: 2px;
 }

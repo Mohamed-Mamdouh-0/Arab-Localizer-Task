@@ -1,5 +1,6 @@
 import { useState, createContext } from "react"
 import React from 'react';
+import nextId from "react-id-generator";
 
 
 
@@ -10,7 +11,8 @@ export function DefaultContext({ children }) {
         name: "Sara Khaled Ahmed",
         role: "Hr Head",
         department: "Buisness Department",
-        attendance:"Present"
+        attendance:"Present",
+        id:nextId()
     }]);
     return (
         <UsersContext.Provider value={{ setUsers, users }}>{children}</UsersContext.Provider>)
