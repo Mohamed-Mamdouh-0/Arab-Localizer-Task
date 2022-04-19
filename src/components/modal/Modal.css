@@ -8,7 +8,9 @@
     font-weight: bold;
 }
 
-.ModalCloseBtn{
-   
-    
+.save-btn{
+   background-color: #23aaeb !important;
+}
+.cancel-btn{
+    background-color: #ff6a6a !important;
 }

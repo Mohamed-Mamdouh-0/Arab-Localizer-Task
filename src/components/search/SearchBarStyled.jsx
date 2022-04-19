@@ -10,7 +10,7 @@ padding-left:2%;
 `;
 export const SearchContainer = styled.div`
     position: relative;
-    width: 85%;
+    width: 97%;
     height: 48px;
     background: white;
     border-radius: 0;
@@ -39,13 +39,15 @@ export const SearchInput = styled.input`
     }
 `;
 
-export const IconButton = styled.button`
+export const IconButton = styled.span`
     position: relative;
+    display:flex;
     height: 36px;
     width:36px;
     border: none;
     z-index:1;
-    cursor: pointer;
+    justify-content:center;
+    align-items:center;
     background: none;
 
  

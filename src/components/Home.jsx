@@ -4,6 +4,8 @@ import Sidebar from './sidebar/Sidebar'
 import { Col, Row } from 'react-bootstrap'
 import User from './user/User';
 import MainContainer from './mainContainer/MainContainer';
+import "../components/Home.css"
+
 
 function Home() {
 
@@ -11,7 +13,7 @@ function Home() {
         <div>
             <Container fluid="true">
 
-                <Row className='gx-0'>
+                <Row className='content'>
                     <Col >
 
                         <Sidebar />
@@ -26,3 +28,4 @@ function Home() {
 }
 
 export default Home
+

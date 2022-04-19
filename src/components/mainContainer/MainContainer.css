@@ -3,10 +3,16 @@ background: #f7f8f9;
 margin-top: 2%;
 width: 100%;
 padding-left: 5vw !important;
-
+height: 100%;
+min-height: fit-content;
+}
     
   @media only screen and (max-width: 1224px) {
-    padding-left:15vw !important; 
-  }
+    .Main-Container{
+    padding-left:6vw !important; 
+  }}
  
+
+.cardRow{
+  height: 106px !important;
 }

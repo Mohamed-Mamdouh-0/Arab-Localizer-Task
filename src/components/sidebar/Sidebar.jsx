@@ -19,7 +19,7 @@ function Sidebar() {
                         </NavIconsWrapper>
                         <NavIconsWrapper>
                             <span eventKey="link-2"><Icon icon="ic:baseline-free-breakfast" color="white" width="29" /></span>
-                            <NavIconTitle>Holidays</NavIconTitle>
+                            <NavIconTitle className='ps-1'>Holidays</NavIconTitle>
                         </NavIconsWrapper>
                         <NavIconsWrapper>
                             <span eventKey="link-3"><Icon icon="ic:baseline-supervisor-account" color="white" width="27" /></span>
@@ -27,7 +27,7 @@ function Sidebar() {
                         </NavIconsWrapper>
                         <NavIconsWrapper>
                             <span eventKey="link-4"><Icon icon="fa-solid:hands" color="white" width="36" height="25" /></span>
-                            <NavIconTitle  className='ps-2'>Inbound Requests</NavIconTitle>
+                            <NavIconTitle  className='ps-1'>Inbound Requests</NavIconTitle>
                         </NavIconsWrapper>
                     </SidebarNav>
                 </Col>

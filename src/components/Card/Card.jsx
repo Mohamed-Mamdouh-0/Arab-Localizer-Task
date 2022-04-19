@@ -1,39 +1,40 @@
 import React from 'react'
-import { Badge, Row, Col } from 'react-bootstrap'
+import {  Row, Col,Card,Container } from 'react-bootstrap'
 import "../Card/Ecard.css"
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 
 function Ecard({ user }) {
+    const badgeStyle = user.attendance
     return (
-        <Col xs={3}>
-            <div>
+        <Col >
+            <Container>
                 <div class="card ps-2 Ecard">
-                    <Row>
+                    <Row fluid={true}>
                         <Col xs={3} className=" p-0">
-                            <UserImage className='mx-4 mt-4' src='https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png' />
+                            <UserImage className='mt-3 ms-4' src='https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png' />
                             <div className='user-edit'>
-                                <Icon className='pe-2' icon="ci:edit" color="#8997a4" width="19" height="22" />
-                                <Icon className='pe-2' icon="ant-design:pause-circle-outlined" color="#8997a4" width="19" height="22" />
-                                <Icon className='pe-2' icon="ic:baseline-delete-forever" color="#8997a4" width="19" height="21" />
+                                <Icon className='me-3' icon="ci:edit" color="#8997a4" width="17" height="22" />
+                                <Icon className='me-3' icon="ant-design:pause-circle-outlined" color="#8997a4" width="17" height="22" />
+                                <Icon className='me-3' icon="ic:baseline-delete-forever" color="#8997a4" width="17" height="21" />
                             </div>
                         </Col>
-                        <Col className='p-0'>
-                            <div class="card-body">
-                                <h5 class="card-title">{user.name}</h5>
-                                <h7>{user.role}</h7>
-                                <p class="card-text mb-2">{user.department}</p>
-                                <Badge bg="secondary">Absent</Badge>
+                        <Col xs={9} className='p-0'>
+                            <Card.Body class="card-body cardBody pt-2">
+                                <Card.Title >{user.name}</Card.Title>
+                                <Card.Subtitle>{user.role}</Card.Subtitle>
+                                <Card.Text className='mb-0'>{user.department}</Card.Text>
+                                <span className={badgeStyle}>{user.attendance}</span>
                                 <div className='notifications'>
                                     <Icon className='me-2' icon="zondicons:exclamation-solid" color="#eaeef0" width="20" height="20" />
                                     <Icon className='me-2' icon="zondicons:exclamation-solid" color="#eaeef0" width="20" height="20" />
                                     <Icon className='me-2' icon="zondicons:exclamation-solid" color="#eaeef0" width="20" height="20" />
                                 </div>
-                            </div>
+                            </Card.Body>
                         </Col>
                     </Row>
                 </div>
-            </div>
+            </Container>
         </Col>
     )
 }
@@ -44,6 +45,6 @@ const UserImage = styled.img`
 height:64px;
 width:64px;
 border-radius:50px;
-margin:2vh;
-
+margin-bottom:1vh;
 `;
+

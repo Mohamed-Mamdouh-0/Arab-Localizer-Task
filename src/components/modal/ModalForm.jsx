@@ -106,8 +106,11 @@ export default function ModalForm({ handleClose }) {
                     <Col>
                         <Form.Group className="mb-3">
                             <Form.Label>Attendance Profile</Form.Label>
-                            <Form.Select type="text" placeholder="Name">
-                                <option>test</option>
+                            <Form.Select type="text" placeholder="Name" required onChange={onFormChange} name="attendance">
+                                <option>Present</option>
+                                <option>Holiday</option>
+                                <option>Absent</option>
+                                <option>Weekend</option>
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId='positionValidation'>
@@ -130,11 +133,11 @@ export default function ModalForm({ handleClose }) {
                     />
                 </Row>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
+                    <Button className='cancel-btn' variant="secondary" onClick={handleClose}>
+                        Cancel
                     </Button>
-                    <Button type="submit" variant="primary" >
-                        Save Changes
+                    <Button className='save-btn px-4' type="submit" variant="primary" >
+                        Save
                     </Button>
                 </Modal.Footer>
 

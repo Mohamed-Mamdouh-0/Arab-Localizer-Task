@@ -4,7 +4,7 @@ import Ecard from '../Card/Card';
 import SearchBar from '../search/SearchBar';
 import '../mainContainer/MainContainer.css';
 import { UsersContext } from '../../contexts/UsersContext';
-import Cardtwo from '../Card/Cardtwo';
+
 
 
 function MainContainer() {
@@ -30,21 +30,21 @@ function MainContainer() {
   }, [users])
 
   return (
-
-    <Container  fluid ={true} className='Main-Container'>
+    
+    <Container  fluid="true" className='Main-Container'>
       <Row className='mb-5'>
         <Col>
           <SearchBar HandleChange={HandleChange} />
         </Col>
       </Row>
-      <Row className='ms-3'>
+      <Row className='ms-3 cardRow'xs={1} md={2} lg={3}>
         {usersList.map((user) =>
           <Ecard user={user} />
         )}
-        {/* <Cardtwo /> */}
+        
       </Row>
     </Container>
-
+  
   )
 }
 
